@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class PageController extends AbstractController
 {
-    #[Route('/', name: 'app_home')]
+    #[Route('/', name: 'app_index')]
     public function index(PostRepository $postRepository): Response
     {
         $posts = $postRepository->findAll();
